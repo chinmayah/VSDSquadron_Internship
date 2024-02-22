@@ -118,7 +118,7 @@ __The second online meet was held on 20th of Feb 2024 @6PM__
 <details>
     <summary> TASK 2 </summary>
 
-  ## Universal Asynchronous Receiver Transmitter protocol based on hardware transmitter
+  ## Universal Asynchronous Receiver Transmitter protocol based hardware transmitter
 
   ### Introduction
 
