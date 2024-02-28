@@ -165,5 +165,67 @@ Executing verilog code for UART Protocol based Hardware Transmitter using iveril
 ![Screenshot from 2024-02-27 02-34-11](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/0d8950fc-7f2f-445b-afcc-d9281457c5c8)
 
 
- 
+</details>
+
+
+__The fourth online meet was held on 27th of Feb 2024 @6PM__
+
+<details>
+    <summary> TASK 4 </summary>
+
+ Performing Synthesis and generating RTL netlist 
+ ## Synthesis
+
+    yosys
    
+![Screenshot from 2024-02-29 01-25-34](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/22247772-8b15-4cfb-96d6-c62a2a0a2b52)
+
+    read_verilog verilog_code
+    synth -top uart_tx
+    
+![Screenshot from 2024-02-29 02-17-33](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/23bf1013-8ec0-4dad-975c-6c971f21835c)
+
+
+![Screenshot from 2024-02-29 02-18-48](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/72ab5f50-63f6-42bf-bfa7-76e684b66e1d)
+
+    
+![Screenshot from 2024-02-29 02-19-35](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/e4802429-8fe5-49b2-a170-340bae490b01)
+
+![Screenshot from 2024-02-29 02-20-27](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/234280cc-a1a6-4c8d-8ba9-3047df9b070f)
+
+![Screenshot from 2024-02-29 02-21-18](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/2e2e7f6b-96d3-4e57-accc-0c01204cb1ef)
+
+![Screenshot from 2024-02-29 02-22-30](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/d7b23c13-4510-4ccc-a139-40bdb6516b8a)
+
+
+### Synthesized Design
+    show
+
+![Screenshot from 2024-02-29 02-26-47](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/4bd89b91-c71c-4ec5-8011-c1a0254d84e1)
+
+
+## Generating netlist
+    write_verilog uart_tx_netlist.v
+    !gvim uart_tx_netlist.v
+It will generate the netlist
+
+
+For simplified netlist,execute
+
+     write_verilog -noattr uart_tx_netlist.v
+     !gvim uart_tx_netlist.v
+
+ ![Screenshot from 2024-02-29 02-58-48](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/ede7c471-0a40-4843-90e8-83ba5231a9cd)
+
+ ![Screenshot from 2024-02-29 02-51-10](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/f333937b-f2f0-4d67-9990-bac4b75ba950)
+
+![Screenshot from 2024-02-29 02-50-20](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/e11dfa82-523d-4887-b430-b8072f6092f5)
+
+
+
+## Verifying netlist with testbench
+
+![Screenshot from 2024-02-29 03-15-49](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/58b13ef3-9cd7-4f1e-8f50-0d85452fa3b4)
+
+![Screenshot from 2024-02-29 03-14-55](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/36e24bd1-8074-4552-8c8d-62f5f9b0357b)
+
