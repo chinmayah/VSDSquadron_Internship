@@ -276,7 +276,9 @@ Simulating Design file after git clone
 ### To generate netlist:
 
 Invoking yosys
+
      $ yosys
+     
      yosys> read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
      
@@ -310,6 +312,11 @@ Invoking yosys
 ![Screenshot from 2024-03-03 16-40-10](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/1109d103-0d80-4de0-8a7c-8bd7a21cf357)
 
 ![Screenshot from 2024-03-03 16-58-44](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/446f9633-39b8-48c9-a0f6-eb00286782f3)
+
+![Screenshot from 2024-03-04 00-37-40](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/65320fd1-ff6e-4d92-9fa8-b80c0ce75488)
+
+![Screenshot from 2024-03-04 00-37-23](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/fcc13ba3-acc9-48cf-88af-42bf7cfba708)
+
 
 
 To check whether the netlist will match the design:
