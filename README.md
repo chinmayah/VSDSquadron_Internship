@@ -253,4 +253,72 @@ For simplified netlist,execute
 
 <details>
     <summary> TASK 5 </summary>
+
+Simulating Design file after git clone
+
+     $ git clone https://github.com/jayshah1x/iiitb_uarttx
+
+     $ cd iiitb_uarttx
+ 
+     $ iverilog -o new iiitb_uarttx_tb.v
+ 
+     $ vvp new
+ 
+     $ gtkwave dump.vcd
+
+
+![Screenshot from 2024-03-03 16-25-58](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/d10838fd-7a20-45f0-9984-3c9bf072acfa)
+
     
+![Screenshot from 2024-03-03 15-47-22](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/34cd69cf-2376-428c-a59f-986fbe125bf3)
+
+
+### To generate netlist:
+
+Invoking yosys
+     $ yosys
+     yosys> read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+     
+![Screenshot from 2024-03-03 16-26-59](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/f8a5e790-f543-49ae-b152-1d4fcaea2fdd)
+
+     yosys> read_verilog iiitb_uarttx.v
+
+     yosys> synth -top UART_TX
+
+     
+![Screenshot from 2024-03-03 16-28-21](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/9d2b5c48-2f13-444b-9641-c1741188df13)
+![Screenshot from 2024-03-03 16-30-50](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/4165f922-ee40-4c10-afc6-c533f30053ea)
+![Screenshot from 2024-03-03 16-31-18](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/a835a568-31be-48cf-8b10-5bae0cd8286d)
+
+    yosys> dfflibmap -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+    yosys> abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+    
+![Screenshot from 2024-03-03 16-32-59](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/2af2f0fa-8a4e-4e0d-a77b-2ddccda3ceba)
+![Screenshot from 2024-03-04 00-07-39](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/e5d02d06-ad7a-4021-aef5-52bc95143146)
+![Screenshot from 2024-03-03 16-33-31](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/61cf31b6-7489-419e-a575-e4d3743d406a)
+
+     yosys> show
+
+     yosys> write_verilog iiitb_uarttx_netlist.v
+     yosys> !gvim iiitb_uarttx_netlist.v
+     yosys> write_verilog -noattr iiitb_uarttx_netlist.v
+
+     
+![Screenshot from 2024-03-03 16-40-10](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/1109d103-0d80-4de0-8a7c-8bd7a21cf357)
+
+![Screenshot from 2024-03-03 16-58-44](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/446f9633-39b8-48c9-a0f6-eb00286782f3)
+
+
+To check whether the netlist will match the design:
+
+     $ iverilog ..my_lib/verilog_model/primitives.v .. my_lib/verilog_model/sky130_fd_sc_hd.v iiitb_uarttx_netlist.v iiitb_uarttx_tb.v
+
+     $ ./a.out
+
+     $ gtkwave dump.vcd
+
+     
+![Screenshot from 2024-03-03 17-11-04](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/90ed4192-0830-4436-911b-ef9379fa3b78)
