@@ -11,7 +11,7 @@
 // Example: 25 MHz Clock, 115200 baud UART
 // (25000000)/(115200) = 217
  
-module UART_TX 
+module uarttx 
   #(parameter CLKS_PER_BIT = 217)
   (
    input       i_Clock,
