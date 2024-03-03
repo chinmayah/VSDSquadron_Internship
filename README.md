@@ -36,7 +36,7 @@ BOARD SPECIFICATIONS:
 
 
 
-__The first online meet was held on 16th of Feb 2024 @6PM__
+### The first online meet was held on 16th of Feb 2024 @6PM
 
 <details>
     <summary> TASK 1 </summary>
@@ -51,15 +51,15 @@ __The first online meet was held on 16th of Feb 2024 @6PM__
 
  ### To install git 
  
-$ sudo apt install git-all 
+     $ sudo apt install git-all 
 
   Error:Unable to locate pakage git-all
   
 __Troubleshooting__ 
 
-$ sudo apt-get dist-upgrade
+     $ sudo apt-get dist-upgrade
 
-$ sudo apt-get update
+     $ sudo apt-get update
 ![Screenshot from 2024-02-19 16-06-16](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/07706c53-5123-4126-a1f8-ea5448adc4f4)
 
 
@@ -71,23 +71,23 @@ $ sudo apt-get update
 ### 1.YOSYS 
 
 
-$ git clone https://github.com/YosysHQ/yosys.git
+     $ git clone https://github.com/YosysHQ/yosys.git
 
 ![Screenshot from 2024-02-20 12-33-54](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/1b9156d3-88ce-4a3c-bdf0-69ea403b740b)
 
-$ cd yosys 
+     $ cd yosys 
 
-$ sudo apt install make
+     $ sudo apt install make
 
-$ sudo apt-get install build-essential clang bison flex \libreadline-dev gawk tcl-dev libffi-dev git \ graphviz xdot pkg-config python3 libboost-system-dev\libboost-python-dev libboost-filesystem-dev zlib1g-dev
+     $ sudo apt-get install build-essential clang bison flex \libreadline-dev gawk tcl-dev libffi-dev git \ graphviz xdot pkg-config python3 libboost-system-dev\libboost-python-dev libboost-filesystem-dev zlib1g-dev
 ![Screenshot from 2024-02-20 12-43-31](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/ad38b9fa-399a-4cdb-abb0-83abd6a783e9)
 
 
-$ make config-gcc
+     $ make config-gcc
 
-$ make 
+     $ make 
 
-$ sudo make install
+     $ sudo make install
 ![Screenshot from 2024-02-20 17-26-25](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/45972e3a-bbfa-4db9-be61-d8510db7ded2)
 
 
@@ -95,7 +95,7 @@ $ sudo make install
 ### 2.iVerilog
 installing iVerilog
 
-$ sudo apt-get install iverilog
+     $ sudo apt-get install iverilog
 
 ![Screenshot from 2024-02-20 17-29-12](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/4ef45917-9ec3-489e-b440-3da444b049eb)
 
@@ -104,16 +104,16 @@ $ sudo apt-get install iverilog
 ### 3.GTkWave
 installing GTkWave
 
-$ sudo apt update
+     $ sudo apt update
 
-$ sudo apt-get install gtkwave 
+     $ sudo apt-get install gtkwave 
 
 ![Screenshot from 2024-02-20 17-33-49](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/0b42d407-ab39-4cd6-ab3c-651c0da70422)
 ![Screenshot from 2024-02-20 17-34-15](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/7688b206-d86d-4419-841d-b6d06e3ae642)
 
 </details>
 
-__The second online meet was held on 20th of Feb 2024 @6PM__
+### The second online meet was held on 20th of Feb 2024 @6PM
 
 <details>
     <summary> TASK 2 </summary>
@@ -150,7 +150,7 @@ __The second online meet was held on 20th of Feb 2024 @6PM__
 
 </details>
 
-__The third online meet was held on 22nd of Feb 2024 @6PM__
+### The third online meet was held on 22nd of Feb 2024 @6PM
 
 <details>
     <summary> TASK 3 </summary>
@@ -158,6 +158,18 @@ Executing verilog code for UART Protocol based Hardware Transmitter using iveril
 
 ## Terminal Commands
 
+    $ ls
+    $ cd ..
+    $ ls
+    $ git clone https://github.com/chinmayah/VSDSquadron_Internship.git
+    $ ls
+    $ cd VSDSquadron_Internship
+    $ ls
+    $ iverilog verilog_code testbench
+    $ ./a.out
+    $ gtkwave dumpfile.vcd
+
+    
 ![Screenshot from 2024-02-27 02-35-13](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/53b91eef-98a0-4255-8983-d0e242c975e2)
 
 ## Simulation Waveform
@@ -168,7 +180,7 @@ Executing verilog code for UART Protocol based Hardware Transmitter using iveril
 </details>
 
 
-__The fourth online meet was held on 27th of Feb 2024 @6PM__
+### The fourth online meet was held on 27th of Feb 2024 @6PM
 
 <details>
     <summary> TASK 4 </summary>
@@ -225,7 +237,20 @@ For simplified netlist,execute
 
 ## Verifying netlist with testbench
 
+    $ iverilog uart_tx_netlist.v testbench
+    $ ./a.out
+    $ gtkwave dumpfile.vcd
+   
+
 ![Screenshot from 2024-02-29 03-15-49](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/58b13ef3-9cd7-4f1e-8f50-0d85452fa3b4)
 
 ![Screenshot from 2024-02-29 03-14-55](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/36e24bd1-8074-4552-8c8d-62f5f9b0357b)
 
+</details>
+
+
+### The fifth task was given on 1st of March 2024 @6PM
+
+<details>
+    <summary> TASK 5 </summary>
+    
