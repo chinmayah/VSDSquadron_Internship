@@ -15,7 +15,7 @@ parameter c_BIT_PERIOD      = 8600;
   reg [7:0] r_TX_Byte = 8'h3F;
   wire [7:0] w_RX_Byte ;
 
-UART_TX #(.CLKS_PER_BIT(c_CLKS_PER_BIT)) UART_TX_Inst
+uarttx #(.CLKS_PER_BIT(c_CLKS_PER_BIT)) UART_TX_Inst
     (.i_Clock(r_Clock),
      .i_TX_DV(r_TX_DV),
      .i_TX_Byte(r_TX_Byte),
