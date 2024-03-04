@@ -271,6 +271,8 @@ Simulating Design file after git clone
 
     
 ![Screenshot from 2024-03-03 15-47-22](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/34cd69cf-2376-428c-a59f-986fbe125bf3)
+![simulation2](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/40318638-d422-4d31-9048-c76b8f1e36f1)
+
 
 
 ### To generate netlist:
@@ -329,3 +331,7 @@ To check whether the netlist will match the design:
 
      
 ![Screenshot from 2024-03-03 17-11-04](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/90ed4192-0830-4436-911b-ef9379fa3b78)
+![netlist zoom2](https://github.com/chinmayah/VSDSquadron_Internship/assets/85050733/03781dfb-d25d-436c-8d1b-462316ed1849)
+
+</details>
+
